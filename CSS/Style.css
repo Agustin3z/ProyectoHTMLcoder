@@ -38,14 +38,17 @@ main {
 
 /* Título principal */
 main .textos {
+    display: flex;
     grid-column: 1 / -1;
-    background-color: white;
     padding: 1rem;
-    border-radius: 8px;
+    background-color: #cf99eb;
+    border-radius: 100px ;
+    justify-content: center;
+    
 }
 
 main h1 {
-    color: #48942c;
+    color: #f3f8f1;
     font-size: 2rem;
 }
 
