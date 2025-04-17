@@ -1,0 +1,26 @@
+
+* para sincronizar el html con el css, hay que poner "link"
+y en el href se le ingresa CSS/ (y la direccion.css)
+
+* maneras de aplicar estilos: etiqueta, clases, id
+
+*una etiqueta es un selector que puede tener 
+propiedad1: Valor
+propiedad2:Valor
+
+*clases: las clases se pueden reutilizar usandola en varias etiquetas
+y se trabaja con un ".(nombre de la clase){}
+
+*id: funciona igual que la clase pero es mas especifico, se los puede tener a los dos juntos, solo que el 
+id es mas importante y va a tomar el estilo mas importante.
+se lo escribe: #pink {} 
+
+*ESTILOS de fondo desde css
+
+estilos generales
+body{
+    background-color
+}
+
+estilos de header
+
