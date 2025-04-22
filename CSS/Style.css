@@ -276,27 +276,34 @@ footer {
 /*PAGINA INFO */
 .info-section {
     padding: 2rem;
-    background-color: #fff6fa;
+    background-color: #c4aacf;
 }
 
 .info-section h2 {
+    font-size: 2rem;
     text-align: center;
-    color: #48942c;
-    margin-bottom: 2rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
 }
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 2fr;
     gap: 1.5rem;
     padding: 1rem;
 }
 
+/* .info-grid h4{
+    display: flex;
+    justify-content: center;
+} */
+
 .info-card {
     background-color: white;
-    border-radius: 12px;
-    padding: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* PAGINA NOSOTROS */
