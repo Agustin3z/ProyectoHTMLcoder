@@ -29,8 +29,8 @@ header img {
 /* Main usando Grid */
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     gap: 1rem;
     padding: 2rem;
     background-color: #c4aacf;
@@ -38,20 +38,25 @@ main {
 
 /* Título principal */
 main .textos {
-    grid-column: 1 / -1;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
+    /* grid-column:1fr; */
+    background-color: #c4aacf;
+    padding: 5rem;
+    border-radius: 10px;
+    text-align: center;
 }
 
 main h1 {
-    color: #48942c;
-    font-size: 2rem;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+main h2{
+    color: gray;
+    font-size:1rem;
 }
 
 /* Imagen destacada */
 main .img {
-    grid-column: 1 / -1;
     display: flex;
     justify-content: center;
     border-radius: 10px;
@@ -64,10 +69,20 @@ main .img img {
     object-fit: cover;
 }
 
+/* Responsive Index */
+
+@media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr; /* Solo una columna en pantallas pequeñas */
+    }
+
+  }
+  
+
 /* Section redes sociales */
 section {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex; 
+    /* grid-template-columns: 1fr ; */
     align-items: center;
     justify-content: center;
     background-color: #48942c;
@@ -75,17 +90,38 @@ section {
     gap: 1rem;
 }
 
+section p{
+    font-size: 2rem;
+}
+
 section img {
+   
     height: 50px;
 }
 
+/* Media query de redes sociales */
+
+@media (max-width: 600px) {
+    section {
+      flex-direction: column-reverse;
+      text-align: center;
+      
+    }
+  }
+
 /* Footer */
 footer {
+    display: flex;
+    gap: 5rem;
+    text-align: center;
+    justify-content: center;
     background-color: black;
     color: #48942c;
     padding: 1rem;
 }
 
+
+     
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
     main {
@@ -105,30 +141,32 @@ footer {
 /* PAGINA ALIMENTOS */
 .alimentos-section {
     padding: 2rem;
-    background-color: #f7e7ff;
+    background-color:#c4aacf;
+    
 }
 
 .alimentos-section h2 {
     text-align: center;
-    color: #48942c;
-    margin-bottom: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
     font-size: 2rem;
+    
 }
 
 /* Grid de alimentos */
 .grid-alimentos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 2fr 2fr;
     gap: 1.5rem;
     justify-content: center;
     align-items: start;
+    
 }
 
 .alimento-item {
     background-color: white;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 5rem;
+    border-radius: 50px;
 }
 
 .alimento-item img {
@@ -136,6 +174,19 @@ footer {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.alimentos-section button {
+    padding: 1rem;
+    background-color: #48942c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.alimentos-section button:hover {
+    background-color: #4bd129;
 }
 
 /* Responsive */
@@ -152,21 +203,24 @@ footer {
 
 /* PAGINA SHOP */
 .shop-section {
-    padding: 2rem;
-    background-color: #fff6fa;
+    padding: 5rem;
+    background-color: #c4aacf;
 }
 
 .shop-section h2 {
     text-align: center;
-    color: #48942c;
+    color: #ffffff;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
 
+
+
+
 /* Grid de productos */
 .grid-shop {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 2fr 2fr;
     gap: 1.5rem;
     justify-content: center;
     align-items: start;
@@ -174,9 +228,8 @@ footer {
 
 .producto-item {
     background-color: white;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    border-radius: 50px;
     text-align: center;
 }
 
@@ -184,7 +237,6 @@ footer {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
 .producto-item h4 {
@@ -193,22 +245,20 @@ footer {
 }
 
 .producto-item p {
-    margin: 0.5rem 0;
-    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .producto-item button {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     background-color: #48942c;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .producto-item button:hover {
-    background-color: #367322;
+    background-color: #4bd129;
 }
 
 /* Responsive */
@@ -252,13 +302,14 @@ footer {
 /* PAGINA NOSOTROS */
 .nosotros-section {
     padding: 3rem;
-    background-color: #f2e5f7;
+    background-color: #c4aacf;
     text-align: center;
 }
 
 .nosotros-section h2 {
-    color: #48942c;
+    color: #ffffff;
     margin-bottom: 1rem;
+    font-size: 3rem;
 }
 
 .nosotros-section p {
@@ -266,6 +317,7 @@ footer {
     max-width: 700px;
     margin: auto;
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
