@@ -38,42 +38,35 @@ main {
 
 /* Título principal */
 main .textos {
-<<<<<<< HEAD
-    /* grid-column:1fr; */
     background-color: #c4aacf;
-    padding: 5rem;
-    border-radius: 10px;
+    padding: 10rem;
     text-align: center;
 }
 
 main h1 {
     color: #ffffff;
-    font-size: 5rem;
+    font-size: 10rem;
 }
 
 main h2{
     color: gray;
     font-size:1rem;
-=======
     display: flex;
-    grid-column: 1 / -1;
     padding: 1rem;
-    background-color: #cf99eb;
-    border-radius: 100px ;
     justify-content: center;
     
 }
 
 main h1 {
     color: #f3f8f1;
-    font-size: 2rem;
->>>>>>> 7a8c480c1e19f22abbdd705f77aeb5bdcb955cb6
+    font-size: 5rem;
 }
 
 /* Imagen destacada */
 main .img {
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -89,9 +82,9 @@ main .img img {
 @media (max-width: 768px) {
     main {
       grid-template-columns: 1fr; /* Solo una columna en pantallas pequeñas */
-    }
-
+          }
   }
+
   
 
 /* Section redes sociales */
