@@ -43,10 +43,7 @@ main .textos {
     text-align: center;
 }
 
-main h1 {
-    color: #ffffff;
-    font-size: 10rem;
-}
+
 
 main h2{
     color: gray;
@@ -79,11 +76,21 @@ main .img img {
 
 /* Responsive Index */
 
-@media (max-width: 768px) {
-    main {
-      grid-template-columns: 1fr; /* Solo una columna en pantallas pequeñas */
-          }
-  }
+
+  @media (max-width: 768px) {
+    main .textos {
+        padding: 2rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
 
   
 
