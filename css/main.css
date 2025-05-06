@@ -222,26 +222,32 @@ footer {
   margin: auto;
 }
 
-@media (max-width: 768px) {
+/*MEDIA PARA TABLET*/
+@media (max-width: 820px) {
   main {
     grid-template-columns: 1fr;
   }
   main .textos {
-    padding: 2rem;
+    padding: 1rem;
   }
   main h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   main h2 {
-    font-size: 1rem;
-    padding: 0.5rem;
+    font-size: 2rem;
+    padding: 0.2rem;
   }
   .alimentos-section h2,
   .shop-section h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  .grid-alimentos,
-  .grid-shop,
+  .grid-alimentos {
+    grid-template-columns: repeat(3, 0.5fr);
+    margin: 6rem;
+  }
+  .grid-shop {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .info-grid {
     grid-template-columns: 1fr;
   }
@@ -250,10 +256,20 @@ footer {
     text-align: center;
   }
 }
-@media (max-width: 600px) {
+/*MEDIA PARA MOBILE*/
+@media (max-width: 480px) {
   section {
     flex-direction: column-reverse;
     text-align: center;
+  }
+  main .textos {
+    padding: 1rem;
+  }
+  main h1 {
+    font-size: 1.5rem;
+  }
+  main h2 {
+    font-size: 1rem;
   }
 }
 
