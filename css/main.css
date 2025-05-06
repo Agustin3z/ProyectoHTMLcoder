@@ -89,7 +89,7 @@ footer {
 }
 
 .alimentos-section {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #c4aacf;
 }
 .alimentos-section h2 {
@@ -101,7 +101,7 @@ footer {
 
 .grid-alimentos {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   justify-content: center;
   align-items: start;
@@ -246,7 +246,7 @@ footer {
     margin: 6rem;
   }
   .grid-shop {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .info-grid {
     grid-template-columns: 1fr;
@@ -270,6 +270,9 @@ footer {
   }
   main h2 {
     font-size: 1rem;
+  }
+  .grid-alimentos {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
