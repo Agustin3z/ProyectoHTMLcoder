@@ -55,7 +55,7 @@ main h1 {
 
 main h2 {
   color: gray;
-  font-size: 1rem;
+  font-size: 2rem;
   display: flex;
   padding: 1rem;
   justify-content: center;
@@ -102,6 +102,8 @@ footer {
   padding: 1rem;
 }
 
+// ALIMENTO
+
 .alimentos-section {
   padding: 1rem;
   background-color: $color-principal;
@@ -114,8 +116,10 @@ footer {
   }
 }
 
- .texto {
-  
+ main .titulo-alimento {
+  text-align: center;
+  padding: 1rem;
+
 }
 
 .grid-alimentos {
@@ -128,8 +132,9 @@ footer {
 
 .alimento-item {
   background-color: white;
-  padding: 5rem;
+  padding: 8.5rem;
   border-radius: 50px;
+  height: 600px;
 
   img {
     width: 100%;
@@ -146,11 +151,14 @@ footer {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  
 
-  &:hover {
-    background-color: $color-hover;
-  }
+//   &:hover {
+//     background-color: $color-hover;
+//   }
 }
+
+// SHOP
 
 .shop-section {
   padding: 5rem;
@@ -201,8 +209,8 @@ footer {
     border-radius: 20px;
     cursor: pointer;
 
-    &:hover {
-      background-color: $color-hover;
+     &:hover {
+     background-color: $color-hover;
     }
   }
 }
@@ -254,7 +262,7 @@ footer {
 
 
 
-/*MEDIA PARA TABLET*/
+/*MEDIA PARA TABLET GALAXY TAB7*/
 
 @media (max-width: 820px) {
   main {
