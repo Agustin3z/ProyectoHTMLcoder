@@ -276,28 +276,20 @@ footer {
   align-items: center;
 }
 
-.nosotros-section {
-  padding: 3rem;
+main .nosotros-section {
+  display: flex;
   background-color: $color-principal;
   text-align: center;
+  justify-content: space-between;
 
   h2 {
-    color: $color-blanco;
+    color: $color-negro;
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
-  p {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: auto;
-  }
 }
 
-.imagen-fuera{
-  display: display;
-  grid-template-columns: 1fr 1fr;
-}
 
 
 

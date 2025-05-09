@@ -229,25 +229,16 @@ main .titulo-alimento {
   align-items: center;
 }
 
-.nosotros-section {
-  padding: 3rem;
+main .nosotros-section {
+  display: flex;
   background-color: #c4aacf;
   text-align: center;
+  justify-content: space-between;
 }
-.nosotros-section h2 {
-  color: #ffffff;
+main .nosotros-section h2 {
+  color: black;
   margin-bottom: 1rem;
-  font-size: 3rem;
-}
-.nosotros-section p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: auto;
-}
-
-.imagen-fuera {
-  display: display;
-  grid-template-columns: 1fr 1fr;
+  font-size: 2.5rem;
 }
 
 /*MEDIA PARA TABLET GALAXY TAB7*/
