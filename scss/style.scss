@@ -35,8 +35,7 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 10fr 600px;
   gap: 1rem;
   padding: 2rem;
   background-color: $color-principal;
@@ -44,10 +43,10 @@ main {
 
  .textos {
   background-color: $color-principal;
-  padding: 25%;
+  width: 100%;
+  height: auto;
   text-align: center;
-//   align-items: center;
-// justify-content: center;
+  padding: 50px;
 
 }
 
@@ -75,7 +74,7 @@ main .img {
     max-width: 100%;
     padding: 15%;
     background-color: #945d34;
-    border-radius: 500px;
+    border-radius: 200px;
 
   //   align-items: center;
   //  justify-content: center;

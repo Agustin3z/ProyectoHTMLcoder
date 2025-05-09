@@ -24,8 +24,7 @@ header img {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 10fr 600px;
   gap: 1rem;
   padding: 2rem;
   background-color: #c4aacf;
@@ -33,8 +32,10 @@ main {
 
 .textos {
   background-color: #c4aacf;
-  padding: 25%;
+  width: 100%;
+  height: auto;
   text-align: center;
+  padding: 50px;
 }
 
 main h1 {
@@ -58,7 +59,7 @@ main .img img {
   max-width: 100%;
   padding: 15%;
   background-color: #945d34;
-  border-radius: 500px;
+  border-radius: 200px;
 }
 
 section {
