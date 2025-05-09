@@ -42,36 +42,43 @@ main {
   background-color: $color-principal;
 }
 
-main .textos {
+ .textos {
   background-color: $color-principal;
-  padding: 10rem;
+  padding: 25%;
   text-align: center;
+//   align-items: center;
+// justify-content: center;
+
 }
 
 main h1 {
   color: #f3f8f1;
-  font-size: 5rem;
+  font-size: 7rem;
 }
 
 main h2 {
   color: gray;
   font-size: 2rem;
-  display: flex;
-  padding: 1rem;
-  justify-content: center;
+  // display: flex;
+  // padding: 1rem;
+  // justify-content: center;
 }
 
 main .img {
-  display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  overflow: hidden;
+ overflow: hidden;
 
   img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: auto;
+    max-width: 100%;
+    padding: 15%;
+    background-color: #945d34;
+    border-radius: 500px;
+
+  //   align-items: center;
+  //  justify-content: center;
   }
 }
 
@@ -101,6 +108,33 @@ footer {
   color: $color-secundario;
   padding: 1rem;
 }
+
+
+
+.newsletter-container input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 60%;
+  max-width: 300px;
+}
+
+
+.newsletter-container button:hover {
+  background-color: #0d2b4b;
+}
+.newsletter-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
 
 // ALIMENTO
 
@@ -258,6 +292,11 @@ footer {
     max-width: 700px;
     margin: auto;
   }
+}
+
+.imagen-fuera{
+  display: display;
+  grid-template-columns: 1fr 1fr;
 }
 
 
